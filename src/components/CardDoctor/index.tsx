@@ -15,7 +15,7 @@ export default function CardDoctor({ avatar, name, whatsapp, code, specialty, am
     return(
       <ButtonWhatsApp
         onPress={async ()=> {
-          await Linking.openURL(`https://api.whatsapp.com/send?phone=55${whatsapp}&text=Ol%C3%A1,%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20sua%20consulta,%20por%20favor.`)
+          await Linking.openURL(whatsapp)
         }}
       >
         <Avatar
