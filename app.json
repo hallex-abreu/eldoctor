@@ -1,10 +1,35 @@
 {
   "expo": {
-    "name": "eldoctor",
-    "slug": "eldoctor",
+    "name": "Eldoctor",
+    "slug": "Eldoctor",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#25292e"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7caf2dd0-27ea-47b1-a7f9-eddde8aa4b60"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png"
+      },
+      "backgroundColor": "#FFFFFF",
+      "package": "com.hallex.eldoctor",
+      "versionCode": 1
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7caf2dd0-27ea-47b1-a7f9-eddde8aa4b60"
+    }
   }
 }
