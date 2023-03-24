@@ -14,7 +14,6 @@ export default class DatabaseInit {
         var sql = [
             // `DROP TABLE IF EXISTS testing;`,
             // `DROP TABLE IF EXISTS option;`,
-            // `DROP TABLE IF EXISTS onboarding;`,
             `CREATE TABLE IF NOT EXISTS testing (
                 id INTEGER PRIMARY KEY,
                 name TEXT UNIQUE
