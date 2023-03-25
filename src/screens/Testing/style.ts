@@ -64,7 +64,7 @@ export const TitleOption = styled.Text`
 `
 
 export const SeeResultButton = styled.TouchableOpacity`
-    background-color: ${theme.colors.primary};
+    background-color: ${theme.colors.secondary};
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;

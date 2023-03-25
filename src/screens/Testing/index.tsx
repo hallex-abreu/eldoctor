@@ -35,7 +35,7 @@ function Testing({route, navigation}) {
 
         if(count.length > 12){
             setChecked([]);
-            Alert.alert('Você pode ter essa neurodiversidade', 'Você pode ter essa neurodiversidade e deve procurar um psicólogo para uma avaliação mais detalhada.', [
+            Alert.alert('VOCÊ PODE TER ESSA NEURODIVERSIDADE', 'Deve procurar um psicólogo para uma avaliação mais detalhada.', [
                 {
                   text: 'Cancelar',
                   onPress: () => console.log('Cancel Pressed'),
@@ -47,13 +47,13 @@ function Testing({route, navigation}) {
         }
         else{
             setChecked([]);
-            Alert.alert('Você provavelmente não tem essa neurodiversidade', 'Você provavelmente não tem essa neurodiversidade, mas pode ter outros problemas que afetam a sua atenção e o seu comportamento.', [
+            Alert.alert('VOCÊ PROVAVELMENTE NÃO TEM ESSA NEURODIVERSIDADE', 'Mas pode ter outros problemas que afetam a sua atenção e o seu comportamento.', [
                 {
                   text: 'Cancelar',
                   onPress: () => console.log('Cancel Pressed'),
                   style: 'cancel',
                 },
-                {text: 'ver profissionais', onPress: () => {navigation.navigate('Home')}},
+                {text: 'Ok', onPress: () => {}},
             ]);
         }
     }

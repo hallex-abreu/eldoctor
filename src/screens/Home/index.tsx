@@ -62,9 +62,6 @@ function Home() {
                     color="#2CCCD3" 
                 />
             }
-            <Row>
-                <Title>Nossos profissionais</Title>
-            </Row>
             {
                 loading && 
                     <Loading 
@@ -78,22 +75,27 @@ function Home() {
             }
             {
                 data && (
-                    <CarrosselDoctors
-                        horizontal={true} 
-                    >
-                        {
-                            data.doctors.map(doctor => (
-                                <CardDoctor
-                                    avatar={doctor.avatar.url}
-                                    name={doctor.name}
-                                    whatsapp={doctor.whatsapp}
-                                    specialty={doctor.specialty}
-                                    code={doctor.code}
-                                    amount={doctor.amount}
-                                />
-                            ))
-                        }
-                    </CarrosselDoctors>
+                    <>
+                        <Row>
+                            <Title>Nossos profissionais</Title>
+                        </Row>
+                        <CarrosselDoctors
+                            horizontal={true} 
+                        >
+                            {
+                                data.doctors.map(doctor => (
+                                    <CardDoctor
+                                        avatar={doctor.avatar.url}
+                                        name={doctor.name}
+                                        whatsapp={doctor.whatsapp}
+                                        specialty={doctor.specialty}
+                                        code={doctor.code}
+                                        amount={doctor.amount}
+                                    />
+                                ))
+                            }
+                        </CarrosselDoctors>
+                    </>
                 )
             }
         </Container>
